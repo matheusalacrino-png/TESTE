@@ -1,30 +1,21 @@
-# AvaliaZap Pro - MVP Funcional
+# AvaliaZap Pro
 
-Projeto de demonstração para coleta de avaliações via WhatsApp com roteamento para Google Meu Negócio.
+Projeto com **Frontend MVP funcional** + **Backend API multiempresa** para automação de avaliações via WhatsApp e integração com Google.
 
-## O que já funciona
+## Estrutura
 
-- Cadastro de empresa com WhatsApp e link de avaliação no Google.
-- Registro de solicitações de avaliação por cliente.
-- Simulação de resposta com nota de 1 a 5.
-- Triagem automática:
-  - 1-2 estrelas: fluxo interno (feedback crítico).
-  - 3-5 estrelas: direcionamento para Google Meu Negócio.
-- Dashboard com métricas em tempo real.
-- Histórico de comunicação e avaliações.
-- Persistência local via `localStorage`.
+- `index.html`, `styles.css`, `script.js`: frontend MVP em HTML/CSS/JS.
+- `backend/`: API em FastAPI com JWT, PostgreSQL e integrações externas.
 
-## Como executar
+## Rodar frontend
 
 ```bash
 cd /workspace/TESTE
 python3 -m http.server 8000
 ```
 
-Acesse: `http://localhost:8000`.
+Acesse `http://localhost:8000`.
 
-## Próxima etapa sugerida
+## Rodar backend
 
-- Backend com autenticação multiempresa.
-- Banco de dados (PostgreSQL).
-- Integração real com WhatsApp Business API e Google Business Profile API.
+Consulte `backend/README.md` para setup e endpoints.
